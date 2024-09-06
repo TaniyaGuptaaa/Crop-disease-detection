@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleabt.css') }}" />
+    <title>Responsive Navbar</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="home.html">FRUIT DISEASE DETECTION</a></div>
+            <ul class="links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="getstarted.html">Get Started</a></li>
+            </ul>
+            <div class="toggle_btn"></div>
+        </div>
+    </header>
+    <section class="scrolling-text">
+        <main>
+            
+        <br>
+        <br>
+        <p>
+            Our mission is to enhance apple farming by leveraging cutting-edge technology to detect diseases in apple crops 
+            early and accurately. Utilizing the power of deep learning,LLMs and the ResNet-50 model, our project aims to identify some
+            apple diseases, ensuring that farmers can take timely actions to protect their crops and maximize yield.
+
+            <b>Why This Project?</b>
+            Apple farming is a critical sector of agriculture, and diseases can significantly impact crop quality and yield. 
+            Traditional methods of disease detection are often time-consuming and require expert knowledge.
+            Our project aims to simplify this process by providing an automated, reliable, and quick solution for identifying apple diseases.
+
+            <b>How It Works</b>
+            Data Collection: We gather a vast dataset of apple images, including healthy apples and those affected by various diseases.
+            Model Training: Using the ResNet-50 architecture, a deep convolutional neural network, we train our model to 
+            recognize patterns and features associated with different apple diseases.
+            Detection: The trained model can then analyze new apple images and accurately predict the presence of diseases,
+            helping farmers to take necessary actions promptly.
+
+            <b>Our Vision</b>
+            We envision a future where technology and agriculture work hand in hand. By providing farmers with advanced tools for disease detection,
+            we hope to contribute to healthier crops, and more efficient farming practices.
+            
+        </p>
+       
+        </main>
+    </section>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='1.css') }}" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">FRUIT DISEASE DETECTION</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- First Screen -->
+        <div id="screen1" class="screen active">
+            <h1 class="title">Hello, I'm Grow</h1>
+            <div class="content">
+                <div class="icon" onclick="showScreen2()">
+                    <img src="{{ url_for('static', filename='assets/1.png') }}" alt="icon">
+                </div>
+                <p>How can I help you?</p>
+                <button class="main-btn" onclick="showScreen2()">I want to know!</button>
+            </div>
+        </div>
+        <!-- Second Screen -->
+        <div id="screen2" class="screen">
+            <div class="icon" onclick="showScreen1()">
+                <img src="{{ url_for('static', filename='assets/1.png') }}" alt="icon">
+            </div>
+            <h1 class="title">Hello, I'm Grow</h1>
+            <div class="content">
+                <div class="chatbox" id="chat-box">
+                    <form id="uploadForm" enctype="multipart/form-data">
+                        <div class="message bot">Enter your query! You can ask regarding your plant health.</div>
+                    </form>
+                </div>
+                <div class="footer">
+                    <input type="file" id="image-input" accept="image/*" style="display: none;" onchange="previewImage()" />
+                    <button class="plus-btn" onclick="document.getElementById('image-input').click()">+</button>
+                    <input type="text" id="text-input" placeholder="Type a message..." onkeydown="checkEnter(event)" />
+                    <button class="send-btn" id="sendButton">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='1.js') }}" defer></script>
+    
+</body>
+</html>

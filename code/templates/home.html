@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <title>World of plants</title>
+  </head>
+  <body>
+    <header>
+        <nav>
+        <ul>
+          <li><a href="home.html">FRUIT DISEASE DETECTION</a></li>                
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="getstarted.html">Get Started</a></li>
+        </ul>
+            <div class="toggle_btn">
+            </div>
+        </nav>
+        
+  
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+            <h1>Go green.</h1>
+            <h2>The world of plants</h2>
+            <p>Discover the disease of your plants, treat them with kindness and they will take care of you.</p>
+           
+          <div class="plant-list">
+              <div class="plant-card">
+                  <img src="{{ url_for('static', filename='assets/healthy.jpg') }}" alt="Healthy">
+                  <h4>Healthy</h4>
+              </div>
+              <div class="plant-card">
+                  <img src="{{ url_for('static', filename='assets/scab.jpg') }}" alt="Plant 2">
+                  <h4>Apple scab</h4>
+              </div>
+              <div class="plant-card">
+                  <img src="{{ url_for('static', filename='assets/rot.jpg') }}" alt="Plant 3">
+                  <h4>Apple black rot</h4>
+              </div>
+              <div class="plant-card">
+                  <img src="{{ url_for('static', filename='assets/rust.jpg') }}" alt="Plant 4">
+                  <h4>Apple cedar rust</h4>
+              </div>
+          </div>
+      </div>
+  </section>
+  <script src="{{ url_for('static', filename='2.js') }}"></script>
+
+    </main>
+  </body>
+</html>
